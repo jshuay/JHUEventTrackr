@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!-- Not sure why this is here -aw
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+-->
+    
+    <!-- MENU OPTIONS -->
+    <item
+        android:id="@+id/action_enter_map"
+        android:onClick="enterMap"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_map"/>
+    <item
+        android:id="@+id/action_enter_event_list"
+        android:onClick="enterEventList"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_event_list"/>
+    <item
+        android:id="@+id/action_event_filters"
+        android:onClick="enterFilters"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_event_filters"/>
+    <item
+        android:id="@+id/action_logout"
+        android:onClick="logoutApp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_logout"/>
+</menu>

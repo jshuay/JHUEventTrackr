@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView02"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context=".CreateEventActivity" >
+
+            <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+
+            <LinearLayout
+                android:id="@+id/dummy_view2"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" />
+
+            <!--
+:nextFocusUp and :nextFocusLeft have been set to the id of this component 
+to prevent the dummy from receiving focus again
+            -->
+
+            <TextView
+                android:id="@+id/autotext2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:nextFocusLeft="@id/autotext"
+                android:nextFocusUp="@id/autotext" />
+
+            <EditText
+                android:id="@+id/edit_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+				android:textSize="36sp"
+                android:gravity="center"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:hint="@string/edit_event_title_hint"
+                android:text="@string/blank" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edit_event_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+				android:textSize="36sp"
+                android:gravity="center"
+                android:hint="@string/edit_event_date_hint"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:text="@string/blank" />
+
+            <EditText
+                android:id="@+id/edit_event_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+				android:textSize="36sp"
+                android:gravity="center"
+                android:hint="@string/edit_event_start_time_hint"
+                android:text="@string/blank" />
+            
+            <EditText
+                android:id="@+id/edit_event_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_start_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+				android:textSize="36sp"
+                android:gravity="center"
+                android:hint="@string/edit_event_end_time_hint"
+                android:text="@string/blank" />
+
+            <EditText
+                android:id="@+id/edit_event_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_location_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/edit_event_location_hint"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+				android:textSize="36sp"
+                android:text="@string/blank" />
+
+            <EditText
+                android:id="@+id/edit_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="320sp"
+                android:layout_below="@+id/edit_event_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/edit_event_description_hint"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+				android:textSize="36sp"
+                android:text="@string/blank" />
+
+            <Button
+                android:id="@+id/edit_event_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+				android:textSize="36sp"
+                android:text="@string/edit_event_ok" />
+            <Button
+                android:id="@+id/edit_event_location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_event_end_time"
+                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10sp"
+                                android:textSize="36sp"
+                android:text="@string/edit_event_location_button_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

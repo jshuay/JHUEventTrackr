@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5pt" >
+
+	<CheckBox
+	    android:id="@+id/filter_checkbox"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="5dip"
+	    android:layout_weight="1.45" />
+    
+    <TextView
+        android:id="@+id/filter_label"
+        style="@style/listStyle"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="6.56" >
+    </TextView>
+
+    
+     <ImageButton
+         android:id="@+id/discard_button"
+		 android:contentDescription="@string/discard_button"
+	     android:layout_height="wrap_content"
+	     android:layout_width="0dip"
+	     android:layout_weight="1"
+	     android:background="#00000000"
+	     android:src="@drawable/ic_action_discard" />
+
+</LinearLayout> 

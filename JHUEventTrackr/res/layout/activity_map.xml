@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MapActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--   <LinearLayout
+        android:id="@+id/filter_button_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:layout_marginTop="-60sp"
+        android:orientation="horizontal"
+        android:paddingBottom="10sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp" >
+
+        <Button
+            android:id="@+id/filter_number_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:text="filters (0)"
+                        android:textSize="16sp" />
+            android:visibility="gone"
+
+    </LinearLayout>-->
+
+</RelativeLayout>
